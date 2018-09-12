@@ -29,7 +29,7 @@ function viewCart() {
   else {
     for (var i=0; i<n-1; i++) {
       message = message + `${getCart()[i].itemName} at $${cart[i].itemPrice}, `;
-      return message + `and ${cart[n].itemName} at $${cart[n].itemPrice}.`;
+      return message + `and ${getCart().itemName} at $${cart[n].itemPrice}.`;
     }
   }
 } 
